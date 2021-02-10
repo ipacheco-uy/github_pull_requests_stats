@@ -2,7 +2,7 @@
 
  python main.py {GITHUB-USERNAME} {GITHUB-TOKEN} {REPO}
  
- ## Output
+## Output
  
 ignacio has : 
 * 27 PR - 11% of them with changes requested
