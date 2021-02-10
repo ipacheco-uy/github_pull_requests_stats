@@ -1,13 +1,14 @@
 from collections import Counter
-
+import sys
 import requests
 from tqdm import tqdm
 import multiprocessing
 from joblib import Parallel, delayed
 from functools import reduce
 from operator import add
+
 num_cores = multiprocessing.cpu_count()
-import sys
+
 
 def fetch_pull_requests(username, token, repo):
     response = requests.get('https://api.github.com/repos/despegar/%s/pulls?state=all&per_page=100' % repo,
