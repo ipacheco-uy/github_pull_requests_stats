@@ -54,7 +54,9 @@ def process_pull_requests(username, token, repo):
             percentage = user_stats[user].setdefault('changes_requested', 0) / user_stats[user]['pr_count']
             user_stats[user]['blocked_percentage'] = "%s%%" % round(percentage * 100)
 
-        print("%s has %s PR - %s of them with changes requested" % (user, user_stats[user]['pr_count'], user_stats[user]['blocked_percentage']))
+        print("%s has : " % user)
+        print("        %s PR - %s of them with changes requested" % (user_stats[user]['pr_count'], user_stats[user]['blocked_percentage']))
+        print("        %s PR where he requested changes" % user_stats[user].get('asked_for_changes',0))
 
 
 if __name__ == "__main__":
