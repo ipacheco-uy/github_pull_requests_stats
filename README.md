@@ -2,6 +2,10 @@
 
  python main.py {GITHUB-USERNAME} {GITHUB-TOKEN} {REPO}
  
+## Token
+
+https://github.com/settings/tokens
+ 
 ## Output
  
 ignacio has : 
