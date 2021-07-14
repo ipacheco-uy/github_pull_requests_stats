@@ -11,7 +11,7 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           organization: 'despegar'
-          period: 7
+          period: 30
           charts: true
           disable-links: true
           sort-by: 'COMMENTS'
